@@ -30,11 +30,11 @@
         <div id="page" class="">
             <div class="layout-wrap">
 
-                <!-- <div id="preload" class="preload-container">
-    <div class="preloading">
-        <span></span>
-    </div>
-</div> -->
+                 <div id="preload" class="preload-container">
+                    <div class="preloading">
+                        <span></span>
+                    </div>
+                </div> 
 
                 <div class="section-menu-left">
                     <div class="box-logo">
@@ -67,12 +67,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-product.html" class="">
-                                                <div class="text">Add Product</div>
+                                            <a href="{{ route('admin.products') }}" class="">
+                                                <div class="text">{{ route('admin.product.add') }}</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="products.html" class="">
+                                            <a href="{{ route('admin.products') }}" class="">
                                                 <div class="text">Products</div>
                                             </a>
                                         </li>
@@ -85,7 +85,7 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-brand.html" class="">
+                                            <a href="{{route('admin.brand.add')}}" class="">
                                                 <div class="text">New Brand</div>
                                             </a>
                                         </li>
@@ -103,12 +103,12 @@
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="sub-menu-item">
-                                            <a href="add-category.html" class="">
+                                        <a href="{{route('admin.category.add')}}" class="">
                                                 <div class="text">New Category</div>
                                             </a>
                                         </li>
                                         <li class="sub-menu-item">
-                                            <a href="categories.html" class="">
+                                        <a href="{{ route('admin.categories') }}" class="">
                                                 <div class="text">Categories</div>
                                             </a>
                                         </li>
